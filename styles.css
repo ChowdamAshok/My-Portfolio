@@ -317,7 +317,6 @@ margin-bottom: 0;
 
 .cft-card:hover {
     transform: scale(1.05);
-    filter: brightness(70%);
 }
 
 .cft-card .cft-content {
