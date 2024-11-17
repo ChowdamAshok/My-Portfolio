@@ -276,9 +276,73 @@ margin-bottom: 0;
 	padding-left: 8px;
 	border-left: 1px solid #e0e0e0;
 }
-.Certifications h1{
-  text-align: center;
+.cft-card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px;
+    flex-wrap: wrap; /* Ensures the cards wrap on smaller screens */
 }
+
+.cft-card {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #ddd;
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+}
+
+#cft-card1 {
+    background-image: url('./images/mst-web-cft.png');
+}
+
+#cft-card2 {
+    background-image: url('./images/spl-cft.jpg');
+}
+
+#cft-card3 {
+    background-image: url('./images/nxtwavepartcft.jpg');
+}
+
+#cft-card4 {
+    background-image: url('C:\Users\Sudha\Desktop\cva files\my certificates\nxtwavepartcft.jpg');
+}
+
+.cft-card:hover {
+    transform: scale(1.05);
+    filter: brightness(70%);
+}
+
+.cft-card .cft-content {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.cft-card:hover .cft-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px); /* Moves the content up when hovered */
+}
+
+.cft-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
 
 /* Basic Section Styling */
 #skills {
