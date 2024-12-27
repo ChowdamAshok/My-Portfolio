@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
 
 
 sr.reveal(`#navbar, .left,
-            .right img, .link-buttons, .about p,.abt h1, .timeline,
+            .right img, .link-buttons, .about p,.abt h1, .timeline, .block-title,
             .box, .s-box, #Portfolio h1, 
             .cft-card, .about h1, .skill-set h1, .skill-set img, .card, .cnt-main h1, .cnt-main h2, .cnt-main h3, 
             .cnt-btn`, {
