@@ -103,8 +103,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .home,
-  .about-content {
+  .home{
     flex-direction: column;
     text-align: center;
     padding: 20px;
@@ -124,10 +123,6 @@ body {
   .about-image {
     max-width: 100%;
     margin: 10%;
-  }
-
-  .about-text {
-    width: 100%;
   }
 
   .left-2 {
