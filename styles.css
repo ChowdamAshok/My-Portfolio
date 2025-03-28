@@ -122,16 +122,40 @@ body {
   .right img {
     max-width: 100%;
     margin: 10%;
+  } 
+  .about-list li {
+    font-size: 8px !important;
+  }
+  .about-list ul li {
+    font-size: 5px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .about {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .about h1 {
+    font-size: 20px !important;
+    text-align: center;
   }
 
   .about-list li {
-    font-size: 12px;
+    font-size: 6px !important; /* Force change */
   }
 
   .about-list ul li {
-    font-size: 8px;
+    font-size: 5px !important; /* Force change */
+  }
+
+  .about-image {
+    width: 90%;
+    max-width: 100%;
   }
 }
+
 
 .about {
   color: white;
