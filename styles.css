@@ -4,6 +4,87 @@ body {
   background-color: rgb(1, 53, 90) !important;
 }
 
+/* General Loading Styles */
+body.loading {
+  overflow: hidden;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.loading-text {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  animation: fadeInOut 2s ease-in-out infinite;
+  text-shadow: 0 0 10px #ff6a00d5, 0 0 20px #ff6a00d8;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* Fire Line */
+.fire-line {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, rgb(0, 225, 255), rgb(17, 0, 255), rgb(0, 217, 255), rgb(0, 255, 191));
+  background-size: 200% auto;
+  animation: fireMove 1s linear infinite, glowPulse 1.5s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+/* Fire movement */
+@keyframes fireMove {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+/* Glow pulse for the line */
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 10px #ff9900;
+  }
+
+  50% {
+    box-shadow: 0 0 25px #ffaa00;
+  }
+}
+
+
+
 .navbar-nav .nav-link:hover {
   background-color: #f0f0f0;
   color: #0056b3;
@@ -63,6 +144,7 @@ body {
 }
 
 @keyframes moveUpDown {
+
   0%,
   100% {
     transform: translateY(0);
@@ -103,7 +185,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .home{
+  .home {
     flex-direction: column;
     text-align: center;
     padding: 20px;
@@ -122,10 +204,12 @@ body {
   .right img {
     max-width: 100%;
     margin: 10%;
-  } 
+  }
+
   .about-list li {
     font-size: 8px !important;
   }
+
   .about-list ul li {
     font-size: 5px !important;
   }
@@ -143,11 +227,13 @@ body {
   }
 
   .about-list li {
-    font-size: 6px !important; /* Force change */
+    font-size: 6px !important;
+    /* Force change */
   }
 
   .about-list ul li {
-    font-size: 5px !important; /* Force change */
+    font-size: 5px !important;
+    /* Force change */
   }
 
   .about-image {
@@ -423,14 +509,17 @@ body {
 
 .cft-card .cft-content {
   position: absolute;
-  bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
+  height: 110%;
+  background-color: rgb(17, 0, 255);
   color: white;
-  padding: 10px;
-  border-radius: 5px;
+  inset: 0;
+  padding: 45px;
+  border-radius: inherit;
+  text-align: center;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  box-sizing: border-box;
 }
 
 .cft-card:hover .cft-content {
@@ -476,7 +565,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ffffff;
   padding: 15px 0;
 }
 
@@ -512,7 +601,7 @@ body {
   left: 0;
   width: 200%;
   height: 150%;
-  background: white;
+  background: white !important;
   transition: transform 0.5s ease, background 1s ease;
   z-index: -1;
   transform: rotate(0deg);
