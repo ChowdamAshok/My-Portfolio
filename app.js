@@ -17,21 +17,14 @@ sr.reveal(`#navbar, .about h1, .timeline, .block-title, #Portfolio h1, .cnt-main
 });
 
 // From Left
-sr.reveal(`.left, #certifications h1, .about-image, .skill-set h1, .cnt-btn`, {
+sr.reveal(`.left, #certifications h1, .right img, .about-list, .skill-set img, .card, .cft-card, .s-box, .box, .about-image, .skill-set h1, .cnt-btn`, {
   origin: 'left',
   interval: 400
 });
-
-// From Right
-sr.reveal(`.right img, .about-list, .skill-set img, .card, .cft-card, .s-box, .box`, {
-  origin: 'right',
-  interval: 400
-});
-
 
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.body.classList.remove('loading');
     document.querySelector('.loading-overlay').style.display = 'none';
-  }, 4000);
+  }, 3000);
 });
