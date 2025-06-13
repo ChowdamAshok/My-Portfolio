@@ -10,7 +10,7 @@ The design emphasizes a responsive layout that adapts seamlessly across devices,
 
 **Live Demo**
 
-Check out the live demo of the project : https://chowdamashok.github.io/My-Portfoilo/
+Check out the live demo of the project : https://chowdamashok.github.io/My-Portfolio/
   
 **Technologies Used**
 
