@@ -39,8 +39,9 @@ bash
 git clone https://github.com/ChowdamAshok/My-Portfolio.git
 cd My-Portfolio
 
+---
 
-🎨 Featured Projects
+## 🎨 Featured Projects
 The portfolio includes:
 
 🛒 E-Commerce Book Store
@@ -53,7 +54,9 @@ The portfolio includes:
 
 🏠 Real Estate Landing Page
 
-📜 Certifications
+---
+
+## 📜 Certifications
 Highlighted certifications in this portfolio:
 
 ✅ Salesforce Certified Administrator – Trailhead
@@ -66,21 +69,23 @@ Highlighted certifications in this portfolio:
 
 ✅ Java Basics – HackerRank
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
 Contributions are welcome! If you’d like to suggest improvements or new features, feel free to:
 
 Open an Issue
 
 Submit a Pull Request
-
-📄 License
+---
+## 📄 License
 This project is licensed under the MIT License – feel free to use, modify, and share with proper credit.
-
-📫 Contact Me
+---
+## 📫 Contact Me
 Feel free to connect or collaborate:
 
-💼 LinkedIn
+💼 **[LinkedIn](https://www.linkedin.com/in/chowdam-ashok-011806294)**
 
-💻 GitHub
+💻 **[GitHub](https://github.com/ChowdamAshok)**
 
 📧 Email: cvashok124@gmail.com
