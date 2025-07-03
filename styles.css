@@ -503,6 +503,10 @@ body.loading {
   background-image: url('./images/spl-cft.jpg');
 }
 
+#cft-card5 {
+  background-image: url('./images/Salesforce_admin_certification.jpg');
+}
+
 .cft-card:hover {
   transform: scale(1.05);
 }
