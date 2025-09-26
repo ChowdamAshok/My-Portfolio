@@ -2,318 +2,348 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashok Chowdam | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body class="loading">
-  <div class="loading-overlay">
-    <h1 class="loading-text">
-      My Portfolio
-      <span class="fire-line"></span>
-    </h1>
-  </div>
-  <section id="navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">My Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body>
+  <!-- Header / Navigation -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <img src="images/Ashok_Profile.jpg" alt="Ashok Chowdam" class="profile-img" />
+      <h1 class="hero-title">Hi, I'm Ashok Chowdam</h1>
+      <p class="subtitle">Entry-Level Java Full Stack Developer | Salesforce Enthusiast</p>
+      <p class="bio">
+        Skilled in Core Java, Spring Boot, REST APIs, and Salesforce Development (Apex, LWC, SOQL).
+        Passionate about building scalable, secure, and efficient applications. Eager to learn and contribute in
+        collaborative environments.
+      </p>
+      <div class="cta-buttons">
+        <a href="mailto:cvashok124@gmail.com" class="btn btn-primary">Hire Me</a>
+        <a href="https://github.com/ChowdamAshok" target="_blank" class="btn btn-outline">GitHub</a>
+        <a href="https://linkedin.com/in/chowdam-ashok-011806294" target="_blank" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Java & Spring Boot</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="70%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>REST APIs & JDBC</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="75%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Frontend (React, HTML/CSS/JS)</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Database - MySQL</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Salesforce Admin</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="78%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Apex & LWC</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="70%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Git & Agile</h3>
+          <div class="progress-bar">
+            <div class="progress" data-width="85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Travel Planning Webpage</h3>
+          <p>
+            Implemented route visualization using Spring Boot REST APIs with cost and time estimations.
+            Built dynamic data handling and responsive UI for seamless trip planning.
+          </p>
+          <div class="tech-tags">
+            <span>Spring Boot</span><span>REST API</span><span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+          <a href="https://github.com/ChowdamAshok" target="_blank" class="btn btn-small btn-blue">View Code</a>
+        </div>
+
+        <div class="project-card">
+          <h3>E-Commerce Website</h3>
+          <p>
+            Frontend shopping site with product listing, cart functionality, and checkout flow using HTML, CSS, and
+            JavaScript. Mimicked real-world e-commerce workflows.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://chowdamashok.github.io/e-commerce-website/" target="_blank"
+            class="btn btn-small btn-blue">View Code</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Multi-Utility Web App</h3>
+          <p>
+            Built during internship: To-Do, Weather, Countdown, and Calculator tools using vanilla JS and responsive
+            design principles.
+          </p>
+          <div class="tech-tags">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          </div>
+          <a href="https://chowdamashok.github.io/Daily-Essentials-pj/" target="_blank"
+            class="btn btn-small btn-blue">View Code</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Landing Page for Real Estate</h3>
+          <p>
+            Designed a professional landing page showcasing houses with clean layout and smooth interactivity using
+            HTML, CSS, and JavaScript.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://chowdamashok.github.io/octanet_may_task_1/" target="_blank"
+            class="btn btn-small btn-blue">View Code</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Arts Showcasing Webpage</h3>
+          <p>
+            Responsive e-commerce-style webpage to display hand-drawn artworks with engaging UI and interactive
+            features.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://chowdamashok.github.io/my-arts-web/" target="_blank" class="btn btn-small btn-blue">View
+            Code</a>
+        </div>
+
+        <div class="project-card">
+          <h3>Interactive Quiz App</h3>
+          <p>
+            A fully responsive quiz application built with Vanilla JavaScript, featuring animations and dynamic question
+            handling.
+          </p>
+          <div class="tech-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://chowdamashok.github.io/Quiz-app/" target="_blank" class="btn btn-small btn-blue">View
+            Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <h3>Salesforce Developer Virtual Internship</h3>
+          <p class="company">SmartBridge & NEAT Cell-AICTE (In Partnership With Salesforce)</p>
+          <span class="date">August 2022 – October 2022</span>
+          <p>
+            Completed 8-week virtual internship covering Salesforce Trailhead modules including:
+          <ul style="margin: 10px 0 10px 20px; padding: 0; list-style-type: disc;">
+            <li>Salesforce Fundamentals</li>
+            <li>Organizational Setup</li>
+            <li>Apex, Testing & Debugging</li>
+            <li>Lightning Web Components (LWC) & API</li>
           </ul>
+          Earned Super Badges: <strong>Apex Specialist</strong> and <strong>Process Automation Specialist</strong>.
+          </p>
+          <div style="margin-top: 15px;">
+            <a href="https://smartinternz.com/internships/salesforce_certificates/f0e1267124a8106605be012d766d65f1"
+              target="_blank" class="btn btn-small" style="background: #00a1e0; color: white;">
+              View Certificate
+            </a>
+          </div>
         </div>
-      </div>
-    </nav>
-  </section>
 
-  <section id="home">
-    <div class="home">
-      <div class="left">
-        <h1><span class="hello">Hello,it's me<br>I'm </span><i>Chowdam Ashok</i></h1>
-        <h1>i'm <span class="multitext">Web Developer</span></h1>
-      </div>
-      <div class="right">
-        <img src="./images/my%20stick.png" alt="Phone">
-      </div>
-    </div>
-    <div class="link-buttons">
-      <a href="https://www.linkedin.com/in/chowdam-ashok-011806294" class="btn-logo-1"><img
-          src="https://cdn-icons-png.flaticon.com/128/16183/16183618.png" alt="Logo"></a>
-      <a href="https://www.salesforce.com/trailblazer/ashokchowdam" class="btn-logo"><img
-          src="https://cdn-icons-png.flaticon.com/128/5968/5968914.png" alt="Logo"></a>
-       <a href="https://github.com/ChowdamAshok" class="btn-logo"><img
-          src="https://cdn-icons-png.flaticon.com/128/4926/4926624.png" alt="Logo"></a>
-      <a href="mailto:cvashok124@gmail.com" class="btn-logo"><img
-          src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="Logo"></a>
-    </div>
-  </section>
-
-  <section id="About">
-    <div class="about">
-      <h1>About Me</h1>
-      <div class="about-content">
-        <div class="about-image">
-          <img src="./images/My_img.jpeg" alt="About Me" />
-        </div>
-        <div class="about-text">
-          <ul class="about-list">
-            <li><strong>B.Tech Student (ECE)</strong> at Vaagdevi Institute of Technology & Science.</li>
-            <li><strong>Passionate about:</strong> Java, and Frontend Development.</li>
-            <li><strong>Expertise in Web Development:</strong>
-              <ul>
-                <li>Proficient in HTML, CSS, and JavaScript for building dynamic, responsive web applications.</li>
-              </ul>
-            </li>
-            <li><strong>Salesforce Expertise:</strong>
-              <ul>
-                <li>Expertise in Salesforce Administration.</li>
-                <li>Actively advancing skills in Salesforce Development to enhance technical proficiency.</li>
-              </ul>
-            </li>
-            <li><strong>Driven by curiosity and innovation,</strong> continuously exploring new technologies and solving
-              complex problems.</li>
-            <li><strong>Objective:</strong> To leverage my skills in software development and emerging technologies to
-              contribute effectively to innovative projects and drive impactful solutions.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="Resume">
-        <div class="block">
-          <div class="block-title">
-            <h3>EDUCATION</h3>
+        <div class="timeline-item">
+          <h3>Web Development Intern</h3>
+          <p class="company">TechOctaNet Services Pvt Ltd.</p>
+          <span class="date">April 2024 – May 2024</span>
+          <p>
+            Developed and deployed a <strong>mini e-commerce website</strong> and a <strong>multi-utility web
+              application</strong> (including To-Do, Weather, and Calculator tools) using HTML, CSS, and JavaScript.
+            Collaborated in an Agile environment, managed code via <strong>Git/GitHub</strong>, and implemented
+            <strong>responsive, mobile-first designs</strong> for cross-device compatibility. Gained practical
+            experience in full project lifecycle—from planning and development to testing and deployment—while adhering
+            to
+            industry best practices.
+          </p>
+          <div style="margin-top: 15px;">
+            <a href="https://verification.givemycertificate.com/v/abfe47fe-e919-4c8b-8d4c-20317433d5ed" target="_blank"
+              class="btn btn-small" style="background: #27ae60; color: white;">
+              Verify Certificate
+            </a>
           </div>
-          <div class="timeline">
-            <!-- Education items -->
-            <div class="timeline-item">
-              <h4 class="item-title">Electronics and Communication Engineering</h4>
-              <span class="item-period">2021-2025</span>
-              <span class="item-small">vaagdevi institute of technology and science</span>
-              <p class="item-description">
-              <p class="item-description">Pursuing a Bachelor's degree in Electronics and Communication Engineering
-                with a strong academic record, currently at 75%.</p>
-            </div>
-            <!-- / Education items -->
-          </div>
-          <div class="timeline">
-            <!-- Education items -->
-            <div class="timeline-item">
-              <h4 class="item-title">intermediate</h4>
-              <span class="item-period">2019-2021</span>
-              <span class="item-small">Abhyas junior collage</span>
-              <p class="item-description">Completed Intermediate with a strong foundation in Mathematics, Physics, and
-                Chemistry, achieved 75.5%.</p>
-            </div>
-            <!-- / Education items -->
-          </div>
-          <div class="timeline">
-            <!-- Education items -->
-            <div class="timeline-item">
-              <h4 class="item-title">SSC</h4>
-              <span class="item-period">2018-2019</span>
-              <span class="item-small">Jeevan Jyoyhi high school</span>
-              <p class="item-description">Completed 10th class with a strong interest in science and technology,
-                achieved a CGPA of 8.8,
-                and developed a solid foundation in Mathematics, Physics, and Chemistry.</p>
-            </div>
-            <!-- / Education items -->
-          </div>
-        </div>
-      </div>
-      <section id="certifications">
-        <h1>Certifications</h1>
-        <div class="cft-card-container">
-          <div class="cft-card" id="cft-card1">
-            <div class="cft-content">
-              <p>Web Development for Beginners course - Microsoft (May 16, 2024).</p>
-            </div>
-          </div>
-          <div class="cft-card" id="cft-card2">
-            <div class="cft-content">
-              <p>Certified in JAVA Basics on HackerRank (Feb 27, 2025)</p>
-            </div>
-          </div>
-          <div class="cft-card" id="cft-card3">
-            <div class="cft-content">
-              <p>Salesforce Admin and App Building - SimpliLearn( Dec 02, 2024)</p>
-            </div>
-          </div>
-          <div class="cft-card" id="cft-card4">
-            <div class="cft-content">
-              <p>Introduction to Generative AI Studio course - SimpliLearn (July 08, 2024).</p>
-            </div>
-          </div>
-          <div class="cft-card" id="cft-card5">
-            <div class="cft-content">
-              <p><strong>Salesforce Certified Administrator</strong><br> Issued: July 02, 2025<br></p> 
-            </div>
-          </div>
-        </div>
-      </section>
-  </section>
-
-  <section id="skills">
-    <div class="background-rotate"></div>
-    <div class="skill-heading">
-      <h2>My Skills</h2>
-    </div>
-    <div class="sk">
-      <div class="skills">
-        <div class="skill-set">
-          <h1>Web Development</h1>
-          <img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="HTML">
-          <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="CSS">
-          <img src="https://cdn-icons-png.flaticon.com/128/16845/16845814.png" alt="JavaScript">
-        </div>
-        <div class="skill-set">
-          <h1>Programming</h1>
-          <img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="C">
-          <img src="https://cdn-icons-png.flaticon.com/128/919/919854.png" alt="JAVA">
-        </div>
-         <div class="skill-set">
-          <h1>Database</h1>
-          <img src="https://cdn-icons-png.flaticon.com/128/15160/15160567.png" alt="SQL">
-        </div>
-        <div class="skill-set">
-          <h1>Version Control</h1>
-          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968866.png" alt="github">
-        </div>
-        <div class="skill-set">
-          <h1>CRM</h1>
-          <img src="https://cdn-icons-png.flaticon.com/128/5968/5968914.png" alt="salesforce">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Portfolio">
-    <h1>My Portfolio</h1>
-    <div class="cards">
-      <div class="card">
-        <div class="card-img">
-          <img src="./images/ecombookssc.png">
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline-container">
+        <div class="timeline-item">
+          <h3>B.Tech in Electronics and Communication Engineering (ECE)</h3>
+          <p class="company">Vaagdevi Institute of Technology & Science, Proddatur</p>
+          <span class="date">2021 – 2025</span>
+          <p>CGPA: 7.9</p>
         </div>
-        <h2>Books E-Commerce Webpage</h2>
-        <p>Developed a comprehensive e-commerce webpage for books, featuring a seamless user experience for browsing, 
-           selecting, and purchasing books. Integrated product listings, cart functionality, 
-          and a responsive UI to ensure accessibility across devices.</p>
-        <a href="https://github.com/ChowdamAshok/e-commerce-website" class="view-button">Repo</a>
-        <a href="https://chowdamashok.github.io/e-commerce-website/" class="view-button">View</a>
-      </div>
-
-      <div class="card">
-        <div class="card-img">
-          <img src="./images/salesforce_pj.png">
+        <div class="timeline-item">
+          <h3>Intermediate (M.P.C)</h3>
+          <p class="company">Abhyas Junior College, Proddatur</p>
+          <span class="date">2019 – 2021</span>
+          <p>CGPA: 7.8</p>
         </div>
-        <h2>Job Application Tracking System – Salesforce Admin </h2>
-        <p> Built a Job Application Tracking System in Salesforce with custom objects 
-          and record-triggered flows to automate email notifications. 
-          Configured dashboards, validation rules, and role-based access to manage application records effectively.</p>
-        <a href="https://www.salesforce.com/trailblazer/ashokchowdam" class="view-button">View Trailhead Account</a>
-        
-      </div>
-
-      <div class="card">
-        <div class="card-img">
-          <img src="./images/arts%20portsc.png">
+        <div class="timeline-item">
+          <h3>SSC</h3>
+          <p class="company">Jeevan Jyothi High School, Proddatur</p>
+          <span class="date">2018 – 2019</span>
+          <p>CGPA: 8.8</p>
         </div>
-       <h2>Arts Showcasing Webpage</h2>
-        <p>Designed and developed a responsive, e-commerce-style webpage using HTML, CSS, and JavaScript to showcase hand-drawn artworks.
-          Blended clean UI design with interactive features to create an engaging and visually appealing user experience.</p>
-        <a href="https://github.com/ChowdamAshok/my-arts-web" class="view-button">Repo</a>
-        <a href="https://chowdamashok.github.io/my-arts-web/" class="view-button">View</a>
-      </div>
-
-      <div class="card">
-        <div class="card-img">
-          <img src="./images/dily%20ess%20pg%20sc.png">
-        </div>
-        <h2>Daily Essentials Webpage</h2>
-        <p> an interactive web page built with HTML, CSS, and JavaScript. This utility page offers essential tools like
-          a to-do list, clock, weather report, calculator, and countdown timer, providing a streamlined, functional
-          experience for daily tasks.</p>
-        <a href="https://github.com/ChowdamAshok/Daily-Essentials-pj" class="view-button">Repo</a>
-        <a href="https://chowdamashok.github.io/Daily-Essentials-pj/" class="view-button">View</a>
-      </div>
-
-      <div class="card">
-        <div class="card-img">
-          <img src="./images/octa1housesldpgsc.png">
-        </div>
-        <h2>Landing page</h2>
-        <p>I designed a professional landing page focused on showcasing houses, highlighting each property’s unique
-          features with a clean, modern layout.
-          The page was crafted to provide an inviting user experience, using HTML, CSS, and JavaScript to ensure smooth
-          interactivity and appealing visuals</p>
-        <a href="https://github.com/ChowdamAshok/octanet_may_task_1" class="view-button">Repo</a>
-        <a href="https://chowdamashok.github.io/octanet_may_task_1/" class="view-button">View</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="contact">
-      <div class="cnt-main">
-        <h1>Contact <span class="me">Me</span></h1>
-        <h2>E-mail</h2>
-        <h3> <a href="mailto:cvashok124@gmail.com" class="cnt-btn">cvashok124@gmail.com</a></h3>
-        <h2>Phone</h2>
-        <h3><a href="tel:+91 7036351816" class="cnt-btn">7036351816</a></h3>
-        <h2>Let's work Together and Do Follow Me </h2>
-        <div class="logobtn">
-          <a href="#" class="cnt-btn"><img src="https://cdn-icons-png.flaticon.com/128/3059/3059590.png"></a>
-          <a href="https://github.com/ChowdamAshok" class="cnt-btn"><img
-              src="https://cdn-icons-png.flaticon.com/128/270/270798.png"></a>
-          <a href="https://www.linkedin.com/in/chowdam-ashok-011806294/" class="cnt-btn"><img
-              src="https://cdn-icons-png.flaticon.com/128/3665/3665214.png"></a>
-          <a href="https://www.instagram.com/ashok_arts_._/" class="cnt-btn"><img
-              src="https://cdn-icons-png.flaticon.com/128/1057/1057248.png"></a>
+  <!-- Certifications -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <div class="badges">
+        <div class="badge">
+          <img src="images/FullStack_Ibm.png" alt="IBM FullStack Development Certificate" />
+          <p>FullStack Development – IBM Skillbuild</p>
         </div>
+        <div class="badge">
+          <img src="images/mst-web-cft.png" alt="Microsoft Web Development Certificate" />
+          <p>Web Development – Microsoft Learn</p>
+        </div>
+        <div class="badge">
+          <img src="images/Salesforce_Admin.png" alt="Salesforce Administrator Certificate" />
+          <p>Salesforce Administrator – Trailhead</p>
+        </div>
+        <div class="badge">
+          <img src="images/Java_HackerRank.png" alt="HackerRank Java Certificate" />
+          <p>Java – HackerRank</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="section-subtitle">Let's build something amazing together!</p>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:cvashok124@gmail.com">cvashok124@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:+917036351816">+91 7036351816</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Proddatur, Andhra Pradesh, India</span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/ChowdamAshok" target="_blank" class="social-icon" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/chowdam-ashok-011806294" target="_blank" class="social-icon"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:cvashok124@gmail.com" class="social-icon" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+      <div class="contact-divider">
+        <hr />
+        <p>Looking forward to connecting with you!</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2024 Ashok Chowdam. All rights reserved.</p>
+    <div class="container">
+      <p>
+        &copy; 2025 Ashok Chowdam. All Rights Reserved.
+        <span class="footer-tagline">Full Stack Developer | Salesforce Enthusiast | Problem Solver</span>
+      </p>
+    </div>
   </footer>
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    var typingEffect = new Typed(".multitext", {
-      strings: ["Frontend Developer", "Salesforce developer"],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 100,
-      backDelay: 1500
-    })
-  </script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="app.js"></script>
+
+  <!-- GSAP Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
