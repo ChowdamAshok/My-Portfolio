@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   // Smooth scroll to sections
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
       const targetId = this.getAttribute("href").trim();
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.to(window, {
           duration: 1,
           scrollTo: { y: target, offsetY: 70 },
-          ease: "power2.out"
+          ease: "power2.out",
         });
       }
     });
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     repeat: -1,
     duration: 2,
     yoyo: true,
-    ease: "sine.inOut"
+    ease: "sine.inOut",
   });
 
   // Hero section
@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: "#home",
       start: "top 80%",
-      toggleActions: "play reverse play reverse"
-    }
+      toggleActions: "play none none none",
+    },
   });
 
   // Skills: progress bars
-  document.querySelectorAll(".progress").forEach(bar => {
+  document.querySelectorAll(".progress").forEach((bar) => {
     const width = bar.getAttribute("data-width");
     if (width) {
       bar.style.width = "0";
@@ -52,14 +52,14 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: bar.closest(".skill-card"),
           start: "top 85%",
-          toggleActions: "play reverse play reverse"
-        }
+          toggleActions: "play none none none",
+        },
       });
     }
   });
 
   // Project cards
-  gsap.utils.toArray(".project-card").forEach(card => {
+  gsap.utils.toArray(".project-card").forEach((card) => {
     gsap.from(card, {
       opacity: 0,
       y: 80,
@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: card,
         start: "top 70%",
-        toggleActions: "play reverse play reverse"
-      }
+        toggleActions: "play none none none",
+      },
     });
   });
 
@@ -86,13 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: item,
         start: "top 80%",
-        toggleActions: "play reverse play reverse"
-      }
+        toggleActions: "play none none none",
+      },
     });
   });
 
   // Certifications
-  gsap.utils.toArray(".badge").forEach(badge => {
+  gsap.utils.toArray(".badge").forEach((badge) => {
     const img = badge.querySelector("img");
     const animate = () => {
       gsap.from(badge, {
@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: badge,
           start: "top 85%",
-          toggleActions: "play reverse play reverse"
-        }
+          toggleActions: "play none none none",
+        },
       });
     };
 
@@ -130,8 +130,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: "#contact",
       start: "top 85%",
-      toggleActions: "play reverse play reverse"
-    }
+      toggleActions: "play none none none",
+    },
   });
 
   gsap.utils.toArray(".contact-item").forEach((item, i) => {
@@ -144,8 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollTrigger: {
         trigger: item,
         start: "top 90%",
-        toggleActions: "play reverse play reverse"
-      }
+        toggleActions: "play none none none",
+      },
     });
   });
 
@@ -159,8 +159,8 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".social-links",
       start: "top 90%",
-      toggleActions: "play reverse play reverse"
-    }
+      toggleActions: "play none none none",
+    },
   });
 
   gsap.from(".contact-divider", {
@@ -170,21 +170,22 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
       trigger: ".contact-divider",
       start: "top 90%",
-      toggleActions: "play reverse play reverse"
-    }
+      toggleActions: "play none none none",
+    },
   });
 
   // Footer
-  gsap.from("footer", {
+  gsap.from(card, {
     opacity: 0,
-    y: 30,
-    duration: 0.8,
-    ease: "power2.out",
+    y: 80,
+    duration: 0.9,
+    ease: "power3.out",
+    once: true,
     scrollTrigger: {
-      trigger: "footer",
-      start: "top 95%",
-      toggleActions: "play reverse play reverse"
-    }
+      trigger: card,
+      start: "top 85%",
+      toggleActions: "play none none none",
+    },
   });
 
   // Theme toggle
