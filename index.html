@@ -15,7 +15,7 @@
     <div class="container">
       <nav>
         <div class="logo">My Portfolio</div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -24,9 +24,16 @@
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button id="theme-toggle" class="theme-toggle">
-          <i class="fas fa-moon"></i>
-        </button>
+        <div class="nav-right">
+          <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
       </nav>
     </div>
   </header>
@@ -36,16 +43,26 @@
     <div class="container hero-content">
       <img src="./Images/Ashok_Profile.jpeg" alt="Ashok Chowdam" class="profile-img" />
       <h1 class="hero-title">Hi, I'm Ashok Chowdam</h1>
-      <p class="subtitle">Entry-Level Java Full Stack Developer | Salesforce Enthusiast</p>
+      <p class="subtitle">Java Full Stack Developer &nbsp;|&nbsp; AI-Powered Applications &nbsp;|&nbsp; Salesforce</p>
       <p class="bio">
-        Skilled in Core Java, Spring Boot, REST APIs, and Salesforce Development (Apex, LWC, SOQL).
-        Passionate about building scalable, secure, and efficient applications. Eager to learn and contribute in
-        collaborative environments.
+        Building production-grade full-stack applications with Java, Spring Boot, React.js, and cutting-edge AI
+        integration. Passionate about shipping real products that solve real problems — from multimodal AI chatbots
+        to AI-driven e-commerce platforms.
       </p>
       <div class="cta-buttons">
-        <a href="mailto:cvashok124@gmail.com" class="btn btn-primary">Hire Me</a>
-        <a href="https://github.com/ChowdamAshok" target="_blank" class="btn btn-outline">GitHub</a>
-        <a href="https://linkedin.com/in/chowdam-ashok-011806294" target="_blank" class="btn btn-outline">LinkedIn</a>
+        <a href="mailto:cvashok124@gmail.com" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Hire Me
+        </a>
+        <a href="https://drive.google.com/file/d/12nVHyK0XrmLOisDD8acAvtFrHjqpph9s/view?usp=drive_link" target="_blank"
+          class="btn btn-resume">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <a href="https://github.com/ChowdamAshok" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/chowdam-ashok-011806294" target="_blank" class="btn btn-outline">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
       </div>
     </div>
   </section>
@@ -54,88 +71,98 @@
   <section id="skills" class="skills">
     <div class="container">
       <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>Java & Spring Boot</h3>
-            <span>85%</span>
+      <div class="skills-categories">
+
+        <div class="skill-category">
+          <div class="category-label">
+            <i class="fas fa-server"></i>
+            Backend
           </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 85%;"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>React.js & JavaScript</h3>
-            <span>80%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Spring Security</span>
+            <span class="skill-tag">JWT</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">JDBC</span>
+            <span class="skill-tag">Maven</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>REST APIs & JDBC</h3>
-            <span>78%</span>
+
+        <div class="skill-category">
+          <div class="category-label">
+            <i class="fas fa-laptop-code"></i>
+            Frontend
           </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 78%;"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>MySQL & PostgreSQL</h3>
-            <span>82%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 82%;"></div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Redux Toolkit</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Vite</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>AI & GenAI (LLM, RAG, Prompt Eng.)</h3>
-            <span>75%</span>
+
+        <div class="skill-category">
+          <div class="category-label">
+            <i class="fas fa-database"></i>
+            Databases
           </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>Spring Security & JWT</h3>
-            <span>78%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 78%;"></div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Neon PostgreSQL</span>
+            <span class="skill-tag">JDBC</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>Salesforce Admin</h3>
-            <span>80%</span>
+
+        <div class="skill-category">
+          <div class="category-label">
+            <i class="fas fa-brain"></i>
+            AI & GenAI
           </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 80%;"></div>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>Apex & LWC</h3>
-            <span>75%</span>
-          </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 75%;"></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Groq API</span>
+            <span class="skill-tag">LLaMA 3.3-70B</span>
+            <span class="skill-tag">Whisper Large V3</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">PDFBox</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-info">
-            <h3>Flows & Automation</h3>
-            <span>78%</span>
+
+        <div class="skill-category">
+          <div class="category-label">
+            <i class="fas fa-cloud"></i>
+            Salesforce
           </div>
-          <div class="progress-bar">
-            <div class="progress" style="width: 78%;"></div>
+          <div class="skill-tags">
+            <span class="skill-tag">Salesforce Admin</span>
+            <span class="skill-tag">Apex</span>
+            <span class="skill-tag">LWC</span>
+            <span class="skill-tag">SOQL</span>
+            <span class="skill-tag">Flows & Automation</span>
+            <span class="skill-tag">Process Builder</span>
           </div>
         </div>
+
+        <div class="skill-category">
+          <div class="category-label">
+            <i class="fas fa-tools"></i>
+            DevOps & Tools
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">Leaflet.js</span>
+            <span class="skill-tag">Postman</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -144,57 +171,54 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>Projects</h2>
+
+      <!-- Featured Projects -->
+      <div class="projects-section-label">
+        <span class="section-pill featured-pill"><i class="fas fa-star"></i> Featured</span>
+      </div>
+
       <div class="projects-grid">
-        <div class="project-card">
-          <h3>NovaMind — AI Chatbot</h3>
+
+        <div class="project-card featured-card">
+          <div class="project-header">
+            <h3>NovaMind — AI Chatbot</h3>
+            <span class="project-badge">AI / Full Stack</span>
+          </div>
           <p>
-            Full-stack AI chatbot with multimodal support — text, image analysis, PDF scanning, and voice input.
-            Built with a Spring Boot backend integrated with Groq's LLaMA and Whisper Large V3 models, and a React
-            frontend
-            featuring a live animated SVG robot mascot, dark/light mode, and mobile-responsive design.
+            Full-stack multimodal AI chatbot supporting text, image analysis, PDF scanning, and voice input.
+            Spring Boot backend integrates Groq's LLaMA 3.3-70B and Whisper Large V3. React frontend features
+            a custom animated SVG robot mascot, dark/light mode, chat history, and JWT-based auth.
+            Deployed on Vercel + Render with Docker and UptimeRobot cold-start prevention.
           </p>
           <div class="tech-tags">
             <span>React.js</span>
             <span>Spring Boot</span>
             <span>Groq AI</span>
-            <span>LLaMA 3.1</span>
-            <span>Whisper Large V3</span>
+            <span>LLaMA 3.3-70B</span>
+            <span>Whisper V3</span>
             <span>PDFBox</span>
             <span>Docker</span>
             <span>Vercel</span>
-            <span>Render</span>
           </div>
-          <a href="https://novamind-ruddy.vercel.app/" target="_blank" class="btn btn-small btn-blue">View Live</a>
+          <div class="project-links">
+            <a href="https://novamind-ruddy.vercel.app/" target="_blank" class="btn btn-small btn-blue">
+              <i class="fas fa-external-link-alt"></i> View Live
+            </a>
+            <a href="https://github.com/ChowdamAshok/NovaMind" target="_blank" class="btn btn-small btn-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Smart Trip Planner</h3>
-          <p>
-            Built an AI-powered travel planning platform enabling real-time route mapping,
-            bus/train search, geolocation-based recommendations, budget estimation,
-            and automated PDF itinerary generation using modern full-stack technologies.
-          </p>
-          <div class="tech-tags">
-            <span>React.js</span>
-            <span>Spring Boot</span>
-            <span>PostgreSQL</span>
-            <span>Spring Security</span>
-            <span>REST APIs</span>
-            <span>Leaflet.js</span>
-            <span>Llama 3.3-70B</span>
+        <div class="project-card featured-card">
+          <div class="project-header">
+            <h3>ShopEcom — AI E-Commerce Platform</h3>
+            <span class="project-badge">Full Stack</span>
           </div>
-          <a href="https://smart-trip-planner-phi.vercel.app/" target="_blank" class="btn btn-small btn-blue">
-            View Live
-          </a>
-        </div>
-
-        <div class="project-card">
-          <h3>ShopEcom — AI E-Commerce Platform</h3>
           <p>
-            Production-grade full-stack e-commerce platform with AI-powered features including a shopping chatbot,
-            natural language search, and review summarizer. Built with Spring Boot and React.js, featuring JWT
-            authentication, role-based access control, admin dashboard, analytics, order tracking, and wishlist
-            management.
+            Production-grade e-commerce platform with AI-powered shopping chatbot, natural language product
+            search, and review summarizer. Features JWT authentication, role-based access control, admin
+            dashboard with analytics, order tracking, wishlist management, and Redux state management.
           </p>
           <div class="tech-tags">
             <span>React.js</span>
@@ -205,77 +229,156 @@
             <span>Redux Toolkit</span>
             <span>Tailwind CSS</span>
             <span>JWT</span>
-            <span>Vercel</span>
-            <span>Render</span>
           </div>
-          <a href="https://shopecom-ruby.vercel.app/" target="_blank" class="btn btn-small btn-blue">View Live</a>
+          <div class="project-links">
+            <a href="https://shopecom-ruby.vercel.app/" target="_blank" class="btn btn-small btn-blue">
+              <i class="fas fa-external-link-alt"></i> View Live
+            </a>
+            <a href="https://github.com/ChowdamAshok/ShopEcom" target="_blank" class="btn btn-small btn-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>E-Commerce Website</h3>
+        <div class="project-card featured-card">
+          <div class="project-header">
+            <h3>Smart Trip Planner</h3>
+            <span class="project-badge">AI / Full Stack</span>
+          </div>
           <p>
-            Frontend shopping site with product listing, cart functionality, and checkout flow using HTML, CSS, and
-            JavaScript. Mimicked real-world e-commerce workflows.
+            AI-powered travel planning platform with real-time route mapping, bus/train search, geolocation
+            recommendations, visual seat selection, budget estimation, and automated PDF itinerary generation.
+            Uses Nominatim geocoding, OSRM routing, and Overpass API for tourist discovery.
           </p>
           <div class="tech-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>React.js</span>
+            <span>Spring Boot</span>
+            <span>PostgreSQL</span>
+            <span>Spring Security</span>
+            <span>Leaflet.js</span>
+            <span>Llama 3.3-70B</span>
+            <span>jsPDF</span>
           </div>
-          <a href="https://chowdamashok.github.io/e-commerce-website/" target="_blank"
-            class="btn btn-small btn-blue">View Code</a>
+          <div class="project-links">
+            <a href="https://smart-trip-planner-phi.vercel.app/" target="_blank" class="btn btn-small btn-blue">
+              <i class="fas fa-external-link-alt"></i> View Live
+            </a>
+            <a href="https://github.com/ChowdamAshok/Smart-Trip-Planner" target="_blank"
+              class="btn btn-small btn-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Multi-Utility Web App</h3>
+        <div class="project-card featured-card">
+          <div class="project-header">
+            <h3>TalentAI — AI Recruitment Platform</h3>
+            <span class="project-badge hackathon-badge"><i class="fas fa-trophy"></i> Hackathon</span>
+          </div>
           <p>
-            Built during internship: To-Do, Weather, Countdown, and Calculator tools using vanilla JS and responsive
-            design principles.
+            Built for an "Intelligent Candidate Discovery" hackathon. Features a 4-signal weighted scoring
+            engine (semantic, skills, experience, activity), recruiter dashboard with status management
+            and JSON export, and an ATS resume analyzer with AI-powered resume rewriting.
+            Resolved PostgreSQL reserved keyword conflicts and CORS preflight issues.
           </p>
           <div class="tech-tags">
-            <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            <span>React.js</span>
+            <span>Spring Boot</span>
+            <span>Neon PostgreSQL</span>
+            <span>Groq AI</span>
+            <span>LLaMA 3.3-70b</span>
+            <span>Tailwind CSS</span>
+            <span>JWT</span>
           </div>
-          <a href="https://chowdamashok.github.io/Daily-Essentials-pj/" target="_blank"
-            class="btn btn-small btn-blue">View Code</a>
+          <div class="project-links">
+            <a href="https://github.com/ChowdamAshok/TalentAI" target="_blank" class="btn btn-small btn-github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
         </div>
 
-        <div class="project-card">
-          <h3>Landing Page for Real Estate</h3>
-          <p>
-            Designed a professional landing page showcasing houses with clean layout and smooth interactivity using
-            HTML, CSS, and JavaScript.
-          </p>
-          <div class="tech-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <a href="https://chowdamashok.github.io/octanet_may_task_1/" target="_blank"
-            class="btn btn-small btn-blue">View Code</a>
-        </div>
+      </div>
 
-        <div class="project-card">
-          <h3>Arts Showcasing Webpage</h3>
-          <p>
-            Responsive e-commerce-style webpage to display hand-drawn artworks with engaging UI and interactive
-            features.
-          </p>
-          <div class="tech-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          </div>
-          <a href="https://chowdamashok.github.io/my-arts-web/" target="_blank" class="btn btn-small btn-blue">View
-            Code</a>
-        </div>
+      <!-- Early Work Toggle -->
+      <div class="early-work-section">
+        <button class="early-work-toggle" id="earlyWorkToggle" onclick="toggleEarlyWork()">
+          <i class="fas fa-code"></i> Early Work
+          <i class="fas fa-chevron-down toggle-icon" id="toggleIcon"></i>
+        </button>
 
-        <div class="project-card">
-          <h3>Interactive Quiz App</h3>
-          <p>
-            A fully responsive quiz application built with Vanilla JavaScript, featuring animations and dynamic question
-            handling.
-          </p>
-          <div class="tech-tags">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <div class="early-work-grid" id="earlyWorkGrid">
+          <div class="project-card early-card">
+            <h3>E-Commerce Website</h3>
+            <p>Frontend shopping site with product listing, cart functionality, and checkout flow. Mimicked real-world
+              e-commerce workflows.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chowdamashok.github.io/e-commerce-website/" target="_blank"
+                class="btn btn-small btn-github">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
           </div>
-          <a href="https://chowdamashok.github.io/Quiz-app/" target="_blank" class="btn btn-small btn-blue">View
-            Code</a>
+
+          <div class="project-card early-card">
+            <h3>Multi-Utility Web App</h3>
+            <p>Built during internship: To-Do, Weather, Countdown, and Calculator tools using vanilla JS and responsive
+              design.</p>
+            <div class="tech-tags">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chowdamashok.github.io/Daily-Essentials-pj/" target="_blank"
+                class="btn btn-small btn-github">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card early-card">
+            <h3>Landing Page for Real Estate</h3>
+            <p>Professional landing page showcasing houses with clean layout and smooth interactivity.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chowdamashok.github.io/octanet_may_task_1/" target="_blank"
+                class="btn btn-small btn-github">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card early-card">
+            <h3>Arts Showcasing Webpage</h3>
+            <p>Responsive e-commerce-style webpage to display hand-drawn artworks with engaging UI.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chowdamashok.github.io/my-arts-web/" target="_blank" class="btn btn-small btn-github">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card early-card">
+            <h3>Interactive Quiz App</h3>
+            <p>Fully responsive quiz application with Vanilla JavaScript, animations, and dynamic question handling.</p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://chowdamashok.github.io/Quiz-app/" target="_blank" class="btn btn-small btn-github">
+                <i class="fas fa-external-link-alt"></i> View
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -286,18 +389,15 @@
 
       <div class="timeline-container">
 
-        <!-- Java Full Stack Training -->
         <div class="timeline-item">
           <h3>Java Full Stack Training</h3>
           <p class="company">Palle Technologies, Bangalore</p>
           <span class="date">May 2025 – November 2025</span>
-
           <p>
             Completed an intensive <strong>6-month Java Full Stack Training Program</strong> with hands-on experience in
             frontend and backend development. Worked on real-time projects using
             <strong>Java, Spring Boot, React.js, REST APIs, MySQL, HTML, CSS, and JavaScript</strong>.
           </p>
-
           <ul style="margin: 12px 0 12px 20px; line-height: 1.8;">
             <li>Developed responsive full-stack web applications.</li>
             <li>Built REST APIs using Spring Boot and integrated databases.</li>
@@ -306,63 +406,51 @@
             <li>Used Git & GitHub for version control and project management.</li>
             <li>Completed multiple mini and real-time projects during training.</li>
           </ul>
-
           <div style="margin-top: 15px;">
             <a href="https://drive.google.com/file/d/1gfbnC_G0uQpjezqZyTJnUP1fZHnokfMq/view?usp=sharing" target="_blank"
               class="btn btn-small" style="background: #2563eb; color: white;">
-              View Certificate
+              <i class="fas fa-certificate"></i> View Certificate
             </a>
           </div>
         </div>
 
-        <!-- Salesforce Internship -->
         <div class="timeline-item">
           <h3>Salesforce Developer Virtual Internship</h3>
           <p class="company">SmartBridge & NEAT Cell-AICTE (In Partnership With Salesforce)</p>
           <span class="date">August 2022 – October 2022</span>
-
           <p>
             Completed 8-week virtual internship covering Salesforce Trailhead modules including:
           </p>
-
           <ul style="margin: 10px 0 10px 20px; line-height: 1.8;">
-            <li>Salesforce Fundamentals</li>
-            <li>Organizational Setup</li>
+            <li>Salesforce Fundamentals & Organizational Setup</li>
             <li>Apex, Testing & Debugging</li>
             <li>Lightning Web Components (LWC) & API</li>
           </ul>
-
           <p>
-            Earned Super Badges:
-            <strong>Apex Specialist</strong> and
-            <strong>Process Automation Specialist</strong>.
+            Earned Super Badges: <strong>Apex Specialist</strong> and <strong>Process Automation Specialist</strong>.
           </p>
-
           <div style="margin-top: 15px;">
             <a href="https://smartinternz.com/internships/salesforce_certificates/f0e1267124a8106605be012d766d65f1"
               target="_blank" class="btn btn-small" style="background: #00a1e0; color: white;">
-              View Certificate
+              <i class="fas fa-certificate"></i> View Certificate
             </a>
           </div>
         </div>
 
-        <!-- Web Development Internship -->
         <div class="timeline-item">
           <h3>Web Development Intern</h3>
           <p class="company">TechOctaNet Services Pvt Ltd.</p>
           <span class="date">April 2024 – May 2024</span>
-
           <p>
             Developed and deployed a <strong>mini e-commerce website</strong> and a
             <strong>multi-utility web application</strong> using HTML, CSS, and JavaScript.
             Worked in an Agile environment with Git/GitHub version control and built
             responsive mobile-friendly UI designs.
           </p>
-
           <div style="margin-top: 15px;">
             <a href="https://verification.givemycertificate.com/v/abfe47fe-e919-4c8b-8d4c-20317433d5ed" target="_blank"
               class="btn btn-small" style="background: #27ae60; color: white;">
-              Verify Certificate
+              <i class="fas fa-check-circle"></i> Verify Certificate
             </a>
           </div>
         </div>
@@ -405,24 +493,29 @@
       <div class="badges">
         <div class="badge">
           <img src="./Images/Fundamentals-of-Artificial-Intelligence.png"
-            alt="Fundamentals-of-Artificial-Intelligence Certificate" />
-          <p>Fundamentals of Artificial Intelligence (Master Badge) – Code360 by Coding Ninjas </p>
+            alt="Fundamentals of Artificial Intelligence Certificate" />
+          <p>Fundamentals of AI (Master Badge)</p>
+          <span class="badge-issuer">Code360 · Coding Ninjas</span>
         </div>
         <div class="badge">
           <img src="./Images/FullStack_Ibm.png" alt="IBM FullStack Development Certificate" />
-          <p>FullStack Development – IBM Skillbuild</p>
+          <p>Full Stack Development</p>
+          <span class="badge-issuer">IBM SkillBuild</span>
         </div>
         <div class="badge">
           <img src="./Images/mst-web-cft.png" alt="Microsoft Web Development Certificate" />
-          <p>Web Development – Microsoft Learn</p>
+          <p>Web Development for Beginners</p>
+          <span class="badge-issuer">Microsoft Learn</span>
         </div>
         <div class="badge">
           <img src="./Images/Salesforce_Admin.png" alt="Salesforce Administrator Certificate" />
-          <p>Salesforce Administrator – Trailhead</p>
+          <p>Salesforce Administrator</p>
+          <span class="badge-issuer">Trailhead</span>
         </div>
         <div class="badge">
           <img src="./Images/Java_HackerRank.png" alt="HackerRank Java Certificate" />
-          <p>Java – HackerRank</p>
+          <p>Java (Basic)</p>
+          <span class="badge-issuer">HackerRank</span>
         </div>
       </div>
     </div>
@@ -434,46 +527,71 @@
       <h2>Get In Touch</h2>
       <p class="section-subtitle">Let's build something amazing together!</p>
 
-      <div class="contact-info">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:cvashok124@gmail.com">cvashok124@gmail.com</a>
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:cvashok124@gmail.com">cvashok124@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+917036351816">+91 7036351816</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Proddatur, Andhra Pradesh, India</span>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ChowdamAshok" target="_blank" class="social-icon" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/chowdam-ashok-011806294" target="_blank" class="social-icon"
+              aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:cvashok124@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
         </div>
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <a href="tel:+917036351816">+91 7036351816</a>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Proddatur, Andhra Pradesh, India</span>
+
+        <!-- Contact Form -->
+        <div class="contact-form-box">
+          <div id="form-success" class="form-success" style="display:none;">
+            <i class="fas fa-check-circle"></i>
+            <p>Message sent! I'll get back to you soon.</p>
+          </div>
+          <div id="contact-form-content">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" placeholder="Your name" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="your@email.com" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="4"
+                placeholder="Tell me about your project or opportunity..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="sendContactForm()">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </div>
         </div>
       </div>
 
-      <div class="social-links">
-        <a href="https://github.com/ChowdamAshok" target="_blank" class="social-icon" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/chowdam-ashok-011806294" target="_blank" class="social-icon"
-          aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:cvashok124@gmail.com" class="social-icon" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-
-      <div class="contact-divider">
-        <hr />
-        <p>Looking forward to connecting with you!</p>
-      </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
       <p>
-        &copy; 2025 Ashok Chowdam. All Rights Reserved.
-        <span class="footer-tagline">Full Stack Developer | Salesforce Enthusiast | Problem Solver</span>
+        &copy; 2026 Ashok Chowdam. All Rights Reserved.
+        <span class="footer-tagline">Java Full Stack Developer &nbsp;·&nbsp; AI Applications &nbsp;·&nbsp;
+          Salesforce</span>
       </p>
     </div>
   </footer>
